@@ -1,0 +1,14 @@
+name = "cf-ai-receipt-sentry-api"
+main = "src/index.ts"
+compatibility_date = "2025-12-29"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "USER_MEMORY"
+class_name = "UserMemoryDO"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["UserMemoryDO"]
