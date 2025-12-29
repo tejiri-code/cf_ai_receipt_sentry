@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pages:build": "next build && npx @cloudflare/next-on-pages",
+    "pages:deploy": "wrangler pages deploy .vercel/output/static --project-name cf-ai-receipt-sentry-web"
+  
   },
   "dependencies": {
     "next": "16.1.1",
